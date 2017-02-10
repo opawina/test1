@@ -35,6 +35,6 @@ for row in df_dirty.index:
 
 # заменяю нули на сообщение
 df_res = df_res.replace([0, None], ['Нет данных', 'Нет данных'])
-print(df_res)
+
 # выгружаю ДФ в csv
 df_res.to_csv('ethanol_stat.csv', float_format='%g', index=False)
